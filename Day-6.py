@@ -101,7 +101,7 @@ print(45,3.4)
 name = "codegnan";branch ="vizag";batch ='PFS-VSP-007'
 print(name,"is in",branch)
 print(batch,"belongs to", branch ,"branch")
-'''
+
 # 2) using %(modulus) formatting --->old style c programming
 # %d --->integers ,%f-->float,%s-->strings
 age = 22
@@ -110,6 +110,31 @@ place ="vizag"
 print("age = %d| price = %f | place = %s"%(age,price,place))
 print("price is %.f"%price)# in this case complete decimal part is wiped
 print("price is %.2f"%price)# rounding off to two decimals
+
+#3)usage of String formatting -->str.format()'''
+name = "codegnan";branch = "vizag";age = 8
+print("{} is in {} and its of {}years in Edtech Industry".format(name,branch,age))
+
+a,b = 2,45
+print("{1},{0}".format(a,b))
+print("value of a is {} and value of b is{}".format(a,b))
+
+#f-string notation --->python 3.9+versions
+print(f'{name} is in {branch}')
+
+#make sure to denote the variables only in curly braces
+print(f'value of a is {a} and b is {b}')
+print(f'" codegnan is in {branch} and of{age} years in Trainings"')
+
+
+
+
+
+
+
+
+
+
 
 
 
